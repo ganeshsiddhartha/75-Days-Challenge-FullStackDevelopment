@@ -17,7 +17,7 @@ p {
 
 /* TODO 3: Set the CSS for the element with an id of "id-selector-demo" to "color: green;" */
 #id-selector-demo {
-  color: green;
+  color: rgb(111, 192, 111);
 }
 
 /* TODO 4: Set the CSS for the li elements that have the "value" attribute set to "4" to have "color: blue;" */
