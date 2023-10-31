@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website</title>
+    <style>
+        /* Basic CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            float: left;
+            width: 30%;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+        .popup-content {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 60%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your E-commerce Website</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Feedback</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Login</a>
+    </nav>
+    <div class="container">
+        <h2>Men</h2>
+        <div class="product">
+            <img src="men_product1.jpg" alt="Men Product 1">
+            <h3>Product Name</h3>
+            <p>Product Description</p>
+            <p>Cost: $50</p>
+        </div>
+        <!-- Add more products here -->
+
+        <h2>Women</h2>
+        <div class="product">
+            <img src="women_product1.jpg" alt="Women Product 1">
+            <h3>Product Name</h3>
+            <p>Product Description</p>
+            <p>Cost: $60</p>
+        </div>
+        <!-- Add more products here -->
+
+        <h2>Kids</h2>
+        <div class="product">
+            <img src="kids_product1.jpg" alt="Kids Product 1">
+            <h3>Product Name</h3>
+            <p>Product Description</p>
+            <p>Cost: $40</p>
+        </div>
+        <!-- Add more products here -->
+
+        <h2>Our Top Products</h2>
+        <div class="product">
+            <img src="top_product1.jpg" alt="Top Product 1">
+            <h3>Product Name</h3>
+            <p>Product Description</p>
+            <p>Cost: $70</p>
+        </div>
+        <!-- Add more products here -->
+    </div>
+
+    <!-- Popup for filter and other content -->
+    <div class="popup">
+        <div class="popup-content">
+            <!-- Add filter and content here -->
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for handling popups
+        function openPopup() {
+            document.querySelector('.popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.querySelector('.popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
